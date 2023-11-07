@@ -1,0 +1,212 @@
+
+.navCentrado{
+  position: fixed;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  z-index: 1;
+}
+.separacion{
+  padding: 2.5px;
+}
+.separacion:hover{
+  font-weight: bold;
+}
+.linea{
+  text-decoration: none;
+}
+.linea:hover{
+  text-decoration: underline;
+  
+}
+.boton{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  background-color: rgba(0, 0, 0, 0.818);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  width: 120px;
+  height: 50px;
+  font-weight: lighter;
+}
+.boton:hover{
+  background-color: rgb(178, 178, 178);
+  color: black;
+  font-weight: bolder;
+}
+.cardZOOM{
+  transition: transform 0.3s ease-in-out;
+}
+.cardZOOM:hover{
+  transform: scale(0.96);
+}
+.cardZOOM2{
+  transition: transform 0.3s ease-in-out;
+}
+.cardZOOM2:hover{
+  transform: scale(0.96);
+  font-weight: bold;
+  border: 5px solid rgb(0, 0, 0);
+  border-radius: 3%;
+}
+
+.imgFilter{
+  filter: grayscale(90);
+}
+
+input{
+  
+	&:required:not(:placeholder-shown):valid {
+		border: 1px solid green;
+		color: black;
+		box-shadow: 0 0 0 2px green;
+	}
+  &:required:not(:placeholder-shown):invalid{
+    border: 1px solid red;
+		color: red;
+		box-shadow: 0 0 0 2px red;
+  }
+}
+
+.textAreaValid:valid{
+  border: 1px solid green;
+  color: black;
+  box-shadow: 0 0 0 2px green;
+}
+.textAreaInvalid{
+  border: 1px solid red;
+	color: red;
+	box-shadow: 0 0 0 2px red;
+}
+.espaciado{
+  font-size: medium;
+}
+
+.negrita:hover{
+  font-weight: bold;
+}
+
+.fotoCard{
+  background-image: url("../contenido/wetransfer_project-approach_2023-10-23_1325/Proyectos propios BRETON DE LOS HERREROS/Breton de los Herreros (1).jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+.fotoCard2{
+  background-image: url("../contenido/wetransfer_project-approach_2023-10-23_1325/Proyectos propios FOTOS PRUNOS/DSC_1142.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+.fotoCard3{
+  background-image: url("../contenido/wetransfer_project-approach_2023-10-23_1325/Proyectos propios MONTELEON/Monteleon (1).jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+.botonRESP{
+  height: 30%;
+}
+
+@media screen and (max-width: 730px){
+  .espaciado{
+    font-size: small;
+  }
+}
+@media screen and (max-width: 530px){
+  .navCentrado{
+    height: 100px;
+  }
+}
+@media screen and (min-width: 650px) {
+  .formResponsive{
+    margin: auto;
+    width: 60%;
+  }
+  
+}
+@media screen and (max-width: 650px){
+  .espaciado{
+    width: 100%;
+    margin: auto;
+    font-size: 15px;
+    margin-bottom: 100px;
+    line-height: 100%;
+  }
+  .cardResponsive{
+    margin-top: 10px;
+  }
+  .botonRESP{
+    height: 23%;
+  }
+}
+@media screen and (max-width: 450px){
+  
+  .espaciado{
+    width: 100%;
+    margin: auto;
+    font-size: 10px;
+    margin-bottom: 100px;
+    line-height: normal;
+    margin-bottom: 220px;
+  }
+  .logoPA{
+    display: none;
+  }
+  .NavTabResponsive{
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 430px){
+  .NavTabResponsive{
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 700px){
+  .headerResponsive{
+    width: 100%;
+    font-size: larger;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 415px){
+  .headerResponsive{
+    width: 100%;
+    font-size: medium;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 350px){
+  .headerResponsive{
+    width: 100%;
+    font-size: small;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 420px){
+  .headerResponsivePP{
+    width: 100%;
+  }
+  .contenidoPP{
+    width: 90%;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 450px){
+  .espaciado2{
+    width: 100%;
+    font-size: 13px;
+  }
+}
